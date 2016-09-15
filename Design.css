@@ -33,10 +33,7 @@
   color:white;
   position:auto;
 }
-.containers{
-  position:right; 
-   margin-top:25px; 
-}
+
 .carousel-control {
   position: absolute;
   top: absolute;
@@ -78,7 +75,7 @@ html {
 
 .footer {
   position: absolute;
-  bottom: -5;
+  bottom: 0;
     width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
@@ -109,7 +106,7 @@ code {
 
 
 .navbar {
-  position: relative;
+  position: fixed;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
