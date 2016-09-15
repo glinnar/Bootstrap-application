@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+		<link href="Design.css" rel="stylesheet" type="text/css"/>
+<script src="shaker.js"></script>
+    <script src="hammer.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	   <script>
+         function init(){
+      
+            shaker.on("shake",function(o){
+              document.getElementById("printout").innerHTML+="SHAKE"+o.shakes+"\n"; /* print out # shakes registered */
+              
+              document.getElementById("Email").reset(); /* reset form */
+            });
+
+                   /* Get the textelement that we want to change */
+      var yoo = new Hammer(change);
+
+
+      /* Swipe left or right to flip page */
+    yoo.on("swiperight", function(event) {
+         window.location.href='Spaceships.html'; 
+      });   
+
+ 
+      
+     yoo.on("swipeleft", function(event) {
+      window.location.href='index.html';
+      });   
+
+              }
+          </script>
+
+
+	</head>
+<body onload="init();">
+         
+     
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Gurra</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+              <li><a href="Planets.html">Planets</a></li>
+            <li><a href="Spaceships.html">Spaceships</a></li>  
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+<form id="form-group">
+  <div class="form-group" id="change">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="Email" placeholder="Enter email">
+  </div>
+  <div class="form-group" >
+    <label for="exampleInputPassword1">Name</label>
+    <input type="name" class="form-control" id="exampleInputPassword1" placeholder="Name">
+  </div>
+  <div class="form-group" >
+     <label for="exampleInputMessage">Message</label>
+  <textarea class="form-control" rows="5" placeholder="Write here"></textarea>
+    </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Created by - Gustaf Linnarsson - University in Skövde</p>
+      </div>
+    </footer>
+
+
+
+  </body>
+  </html>

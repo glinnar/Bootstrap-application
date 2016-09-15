@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+
+		<link href="Design.css" rel="stylesheet" type="text/css"/>
+     <script src="shaker.js"></script>
+        <script src="hammer.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	
+
+<script>
+      function init(){
+        shaker.on("shake",function(o){
+          
+          if (document.getElementById("shake") <5){
+    
+            window.location.href = 'Contact.html';
+
+
+          }         else {
+            window.location.href = 'Start.html'; ;
+          }
+          
+        });
+            
+      var yoo = new Hammer(change);
+
+
+      /* Swipe left or right to flip page */
+    yoo.on("swiperight", function(event) {
+           window.location.href='index.html';
+      });   
+
+ 
+      
+     yoo.on("swipeleft", function(event) {
+     window.location.href='Planets.html';
+      });  
+      }
+    </script>
+	</head>
+<body onload="init();">
+     
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Go to space</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+              <li><a href="Planets.html">Planets</a></li>
+            <li><a href="Spaceships.html">Spaceships</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="content">
+   <div class="jumbotron"id="change">
+      <div class="container" >
+        <h1>Go to space!</h1>
+        <p>Have you always wanted to visit space? Well now you´ve got the chance! We offer a couple of diffrent journeys all across the galaxy. Want to know more? Click the buttons below och just swipe right. For you mobile users, if you want to contact us just shake your device to get to our contact form! </p>
+    
+      </div>
+    </div>
+
+  <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Spaceships</h2>
+          <p>The company has a total of six diffrent spaceships. When booking your trip the choice is yours!
+          Choose between all ten. Just to make your trip as comfortable as possible. For more information about our diffrent spaceships and specifikations, click below. </p>
+          <p><a class="btn btn-default" href="Spaceships.html" role="button">View Ships &raquo;</a></p>
+        </div>
+     
+         <div class="col-md-4">
+          <h2>Planets</h2>
+          <p> We offer trips to most planets in the galaxy for more details of what planets just hit the button.  </p>
+          <p><a class="btn btn-default" href="Planets.html" role="button">View Planets &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Prices</h2>
+          <p> Why not book one of our diffrent packages? So read more about them and se all prices swipe left or just hit the planet button int the menu. </p>
+ 
+       </div>
+
+    </div>
+  </div>
+        
+  </div>
+</div>
+
+
+
+   
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Created by - Gustaf Linnarsson - University in Skövde</p>
+      </div>
+    </footer>
+
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+  </html>

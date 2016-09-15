@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link href="Design.css" rel="stylesheet" type="text/css"/>
+    <script src="hammer.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+
+    function init(){
+      
+    
+
+         /* Get the textelement that we want to change */
+      var yoo = new Hammer(change);
+
+
+      /* Swipe left or right to flip page */
+    yoo.on("swiperight", function(event) {
+         window.location.href='about.html';  
+
+
+         });  
+
+     yoo.on("swipeleft", function(event) {
+     window.location.href='Spaceships.html';
+    
+      });   
+
+   
+    }
+
+  </script>
+   
+  </head>
+<body onload="init();">
+         
+ 
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Go to space</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+              <li><a href="#">Planets</a></li>
+            <li><a href="Spaceships.html">Spaceships</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container" id="change">
+      <!-- Example row of columns -->
+   
+      <div class="row">
+ 
+ <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <a href="https://www.flickr.com/photos/esoastronomy/16770136981/in/photolist-rxVksM-r2H6C4-fT2rJP-9EB28v-9fXBsp-a8iLbe-8rRbgk-crJTP-rA545r-q2C1MR-u1NY2J-r1BhwZ-pAGdzH-9epc4T-aJfUvX-jEpNfw-rRGWdH-nUtAHF-d6hcYU-9qgzPR-mHL5ns-9Z2UjD-4CTj7N-8o2vuG-7mEAMH-7swLs5-5YyDcy-3VB2iP-eVkwWR-eeyLHR-6tKzSr-cAYSmN-kiHTm6-jGZJt-oWE3rB-j343iZ-22fRjF-5tFXRs-cRL3GQ-33bUaa-3ikJck-qqtJM2-nB3QZA-8WUpqt-6pyLMZ-aZPdd-oGnHL5-eATqNP-dX3JZu-5sFNTJ" class="thumbnail">
+<img src="bilder/Mars.png"></a>
+<div class="caption">
+        <h3>Mars</h3>
+<p>Price:20000 kr </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Show info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mars</h4>
+      </div>
+      <div class="modal-body">
+        Our closest neighbour is the red rocky planet Mars. Mars was the first planet that humankind visited and when the first people moved here didn´t it take long before more followed. Today Mars is the second most poulated planet in our system and a sight you won´t forget. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+       </div>
+
+     </div>
+ <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <a href="bilder/cool3.png" class="thumbnail">
+<img src="bilder/Venus.png"></a>
+<div class="caption">
+        <h3>Venus</h3>
+<p>Price:40000 kr </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Venus">
+  Show info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Venus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="VenusLabel">Venus</h4>
+      </div>
+      <div class="modal-body">
+        Venus or often called Earth´s twin is second closest to the sun. For a long time science thought that it was to hot for life to exist here. But when the famous cooling devices was invented and first used in real life then water started to exist again. Today can you enjoy and relax on this hot and tropical planet. Here does the sun never sets and it´s summer all year.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+       </div>
+
+     </div>
+      <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <a href="bilder/cool3.png" class="thumbnail">
+<img src="bilder/Keppler2535B.png"></a>
+<div class="caption">
+        <h3>Kepler2535B</h3>
+<p>Price:50000 kr </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Kepler">
+  Show info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Kepler" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="KeplerLabel">Kepler2535B</h4>
+      </div>
+      <div class="modal-body">
+        In the outer rhym lies mysterious Kepler2535B. A troical forest planet with a rich animal life and none hostile envoirment. Why not enjoy a walk in the woods or take a safari trip to se all the spectacular animals. This is a sight you can´t say no to.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+       </div>
+
+     </div>
+      <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <a href="bilder/cool3.png" class="thumbnail">
+<img src="bilder/Saturn.png"></a>
+<div class="caption">
+        <h3>Saturn</h3>
+<p>Price:25000 kr </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Saturn">
+  Show info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Saturn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="Saturnlabel">Saturn</h4>
+      </div>
+      <div class="modal-body">
+        On of our close neighbours is Saturn. This gas giant is one of the biggest in our system. When mankind first visited Saturn year 2452 was thera an hostil envoirment. But now it´s one of biggest and more popular travel destinations.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+       </div>
+
+     </div>
+      <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <a href="bilder/cool3.png" class="thumbnail">
+<img src="bilder/Earth2.png"></a>
+<div class="caption">
+        <h3>Earth 2.0</h3>
+<p>Price:2000000 kr </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Earth">
+  Show info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Earth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="EarthlLabel">Earth2.0</h4>
+      </div>
+      <div class="modal-body">
+        Far far away in our galaxy lies Earth2.0. 1400 light years away to be precise. This planet is twice as big as our earth and it´s also older. This is a paradise familliar to all earthlings. Go ski in the mountains or why not jump in the ocean the choice is yours!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+       </div>
+
+     </div>
+      <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+       <a href="https://www.flickr.com/photos/68942208@N02/15722123189/in/photolist-pXiZtt-m6weYK-b9FEP2-4AFrt6-5hhXdd-7n6aqb-b37SjX-7jfCqm-qX8H4x-qmw69R-oQnpMc-9GGqm7-7UvsBj-85Ctqw-9pCka7-8DNPu5-2WrTMf-9YbLam-5Jyq6h-oGn2GA-vMrpd5-vMuqPz-yDuvn-cqwb13-71BkUJ-6wJn2G-9bQesr-6Aibgx-pw1cqC-6dycuy-cpmnXL-6Vcqu1-dUv3Zt-9TtPWk-9j3FLv-6VB84H-5SSN6W-5BkuPa-8AW53R-9rB8Dq-fd2PH8-93LTVy-fcYBMV-7zmH8b-4mng8A-9rxezE-5Bihvz-N4xwT-cHUrXy-avRBYY" class="thumbnail">
+<img src="bilder/Moon.jpg"></a>
+<div class="caption">
+        <h3>Moon</h3>
+<p>Price:20000 kr </p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Moon">
+  Show info
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Moon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="MoonLabel">Moon</h4>
+      </div>
+      <div class="modal-body">
+        Our own moon was the first non earth ground humankind first visited.back in 1969 did Niel Armstrong take the first steps on the surface.If ýou want to expirience the history and want to see how our planet looks from space. Then a trip to the moon is the right thing for you.   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+       </div>
+
+     </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="caption">
+            </div>
+
+
+</div>
+     
+  </div>
+
+  </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Created by - Gustaf Linnarsson - University in Skövde</p>
+      </div>
+    </footer>
+
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+
+
+  </body>
+  </html>
