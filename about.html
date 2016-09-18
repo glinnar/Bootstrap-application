@@ -1,51 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-
     <link href="Design.css" rel="stylesheet" type="text/css"/>
     <script src="shaker.js"></script>
     <script src="hammer.js"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
-
     <script>
         function init(){
             shaker.on("shake",function(o){
-
                 if (document.getElementById("shake") <5){
-
                     window.location.href = 'Contact.html';
-
 
                 }         else {
                     window.location.href = 'Start.html'; ;
                 }
-
             });
-
             var yoo = new Hammer(change);
-
-
             /* Swipe left or right to flip page */
             yoo.on("swiperight", function(event) {
                 window.location.href='index.html';
             });
-
-
 
             yoo.on("swipeleft", function(event) {
                 window.location.href='Planets.html';
             });
         }
     </script>
+    <script src="../../Webbprogrammering/Booking.js"></script>
 </head>
 <body onload="init();">
 
@@ -99,25 +85,17 @@
             <div class="col-md-4">
                 <h2>Prices</h2>
                 <p> Why not book one of our diffrent packages? So read more about them and se all prices swipe left or just hit the planet button int the menu. </p>
-
             </div>
-
         </div>
     </div>
-
 </div>
 </div>
-
-
-
 
 <footer class="footer">
     <div class="container">
         <p class="text-muted">&copy; Created by - Gustaf Linnarsson - University in Skövde</p>
     </div>
 </footer>
-
-
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
